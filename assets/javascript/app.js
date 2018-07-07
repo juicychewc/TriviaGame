@@ -155,13 +155,13 @@ function reset() {
 $(document).ready(function () {
 
     //"fun" audio
-    <audio id="myAudio" src="assets/sound/TrollSong.mp4" loop="loop"></audio>
-    $("#my_audio").get(0).play();
+    var myAudio = new Audio("assets/sound/TrollSong.mp4");
 
     //start button
     $("#gamestart").on("click", function () {
         whatsInTheBox();
         setTimeLimit();
+        myAudio.play();
     });
 
     //answer selection
@@ -176,7 +176,7 @@ $(document).ready(function () {
             brainNoWork();
         }
     });
-    
+
     $(".gameScreen").on("click", "#resetButton", function () {
         reset();
     });
