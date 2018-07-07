@@ -154,6 +154,10 @@ function reset() {
 
 $(document).ready(function () {
 
+    //"fun" audio
+    <audio id="myAudio" src="assets/sound/TrollSong.mp4" loop="loop"></audio>
+    $("#my_audio").get(0).play();
+
     //start button
     $("#gamestart").on("click", function () {
         whatsInTheBox();
@@ -174,7 +178,6 @@ $(document).ready(function () {
     });
     
     $(".gameScreen").on("click", "#resetButton", function () {
-        console.log("resetting");
         reset();
     });
 });
