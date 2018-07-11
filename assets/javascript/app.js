@@ -55,8 +55,8 @@ var questions = [
     },
 
     question10 = {
-        image: "assets/images/Wutface.jpg",
-        options: ["SwiftRage", "DansGame", "Jebaited", "Wutface"],
+        image: "assets/images/WutFace.jpg",
+        options: ["SwiftRage", "DansGame", "Jebaited", "WutFace"],
         answer: 3
     },
 
